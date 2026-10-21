@@ -1,15 +1,15 @@
 package Warframe.Market.MarketCompanion.model;
 
 public class ItemModel {
-    
-    private String id;
-    private String item_name;
-    private String url_name;
 
-    public ItemModel(String id, String item_name, String url_name) {
+    private String id;
+    private String itemName;
+    private String urlName;
+
+    public ItemModel(String id, String itemName, String urlName) {
         this.id = id;
-        this.item_name = item_name;
-        this.url_name = url_name;
+        this.itemName = itemName;
+        this.urlName = urlName;
     }
 
     public String getId() {
@@ -17,10 +17,10 @@ public class ItemModel {
     }
 
     public String getItemName() {
-        return item_name;
+        return itemName;
     }
 
     public String getUrlName() {
-        return url_name;
+        return urlName;
     }
 }
