@@ -21,4 +21,8 @@ public class WarframeItemService {
     public String getSingleItem(String itemName) {
         return client.get().uri("/item/{itemName}", itemName).retrieve().body(String.class);
     }
+
+    public String getItemSet(String itemName) {
+        return client.get().uri("/item/{itemName}/set", itemName).retrieve().body(String.class);
+    }
 }
